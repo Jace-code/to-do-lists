@@ -1,0 +1,100 @@
+*{
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;  
+ font-family: "poppins", sans-serif;
+}
+
+body{
+    color: white;
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to left bottom,white,rgb(146, 25, 45));
+    background-size: 180% 180%;
+    animation:fade 10s infinite;
+}
+
+@keyframes fade{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+div{
+    width: 1000px;
+    max-width: 540px;
+    background-color:rgba(245, 245, 245, 0.346);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+div h1{
+    font-size: xxx-large;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background:  rgb(216, 124, 170);
+    padding: 10px;
+    font-weight: 14px;
+    color: white;
+    border-radius: 40px;
+    width: 15rem;
+    font-size: 15px;
+}
+
+div #stylebtn{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    color: black;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+div #stylebtn:hover{
+    background-color: pink;
+    font-size: medium;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 10px 12px 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li.checked{
+    color: black;
+    text-decoration: line-through;
+}
+ul li BUTTON{
+    border-radius: 40px;
+    position: absolute;
+    padding: 10px 20px;
+    right: 0;
+    color:black;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+ul li BUTTON:hover{
+    background-color: pink;
+    font-size: medium;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
